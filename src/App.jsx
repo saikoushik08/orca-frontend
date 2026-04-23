@@ -32,7 +32,7 @@ const liquidGlass = "bg-[#0A0B10]/40 backdrop-blur-2xl border border-white/10 sh
 const interactiveCard = "bg-black/50 backdrop-blur-3xl border border-white/10 shadow-[0_16px_64px_rgba(0,0,0,0.8)] cursor-default";
 
 // --- REAL BACKEND API INTEGRATION ---
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 const API = {
   createJob: async (method) => {
